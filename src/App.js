@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client'
-import { Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import SignUpLogin from './pages/SignUpLogin'
 
 export default function App() {
@@ -8,17 +8,17 @@ export default function App() {
     ]
 
     return (
-        <Routes>
-            {pages.map((page) => (
-                <Route
-                    key={page.text}
-                    path={page.link}
-                    element={page.component}
-                />
-            ))}
-        </Routes>
+        <BrowserRouter>
+            <Routes>
+                {pages.map((page) => (
+                    <Route
+                        key={page.text}
+                        path={page.link}
+                        element={page.component}
+                    />
+                ))}
+            </Routes>
+        </BrowserRouter>
     )
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<App />)
