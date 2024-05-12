@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import ReactDOM from 'react-dom/client'
+import { Routes, Route } from 'react-router-dom'
+import SignUpLogin from './pages/SignUpLogin'
 
-import SignUpLogin from './pages/SignUpLogin';
+export default function App() {
+    const pages = [
+        { text: 'SignUpLogin', link: '/', component: <SignUpLogin /> },
+    ]
 
-function App() {
-
-  // login / sign up form here
-
-  return (
-    <div className="App">
-
-      <SignUpLogin />
-      <div>
-        i need
-      </div>
-      <div>
-        i have
-      </div>
-    </div>
-  );
+    return (
+        <Routes>
+            {pages.map((page) => (
+                <Route
+                    key={page.text}
+                    path={page.link}
+                    element={page.component}
+                />
+            ))}
+        </Routes>
+    )
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<App />)
