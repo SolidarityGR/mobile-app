@@ -1,0 +1,68 @@
+[
+    {
+        "image": "https://media.gq.com/photos/65cfbf6e8aa1eb1e0bb7ecf4/16:9/w_1280,c_limit/gerald-art.jpg",
+        "name": "Brown Jacket",
+        "provider_rating": "5",
+        "available_no_contact": false
+    },
+    {
+        "image": "https://lajolla.com/wp-content/uploads/2022/01/San-Diego-Plus-Size-Clothing-Stores.jpg",
+        "name": "Shirts",
+        "provider_rating": "5",
+        "available_no_contact": true
+    },
+    {
+        "image": "https://media.gq.com/photos/65d9006dfa2aaad07fced540/3:4/w_748%2Cc_limit/layer_18.jpg",
+        "name": "Sweater",
+        "provider_rating": "5",
+        "available_no_contact": false
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/615j5XstJNL._AC_UY1000_.jpg",
+        "name": "Green Pants",
+        "provider_rating": "4",
+        "available_no_contact": true
+    },
+    {
+        "image": "https://eu-images.contentstack.com/v3/assets/blt7dcd2cfbc90d45de/blt48b59cf19b5932ee/60dc06becbc6070f5c3dc4d8/13-1_copy_14-1.jpg?format=pjpg&auto=webp&quality=75%2C90&width=3840",
+        "name": "Beanie",
+        "provider_rating": "3",
+        "available_no_contact": false
+    },
+    {
+        "image": "https://rab.equipment/media/catalog/product/a/r/argon_pants_black_shark_qda-71-bl_model_crop_3_4_crop_1.jpg?optimize=medium&fit=bounds&height=&width=",
+        "name": "Puffer Pants",
+        "provider_rating": "2",
+        "available_no_contact": true
+    },
+    {
+        "image": "https://eu-images.contentstack.com/v3/assets/blt7dcd2cfbc90d45de/blt5719717f31c42d1b/6389f075ea01c97c9f9a81b3/hiemsbuscarf1.jpg?format=pjpg&auto=webp&quality=75%2C90&width=3840",
+        "name": "Scarf",
+        "provider_rating": "1",
+        "available_no_contact": false
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/81j17qZnQrL._AC_UY1000_.jpg",
+        "name": "Floral Dress",
+        "provider_rating": "2",
+        "available_no_contact": true
+    },
+    {
+        "image": "https://cdn.thewirecutter.com/wp-content/media/2023/05/running-shoes-2048px-9718.jpg",
+        "name": "Running Shoes",
+        "provider_rating": "3",
+        "available_no_contact": false
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71OphXmiuuS._AC_UY900_.jpg",
+        "name": "Watch",
+        "provider_rating": "4",
+        "available_no_contact": true
+    },
+    {
+        "image": "https://www.stormtech.eu/cdn/shop/products/CWJ-1_CARBON_742bd02e-ae33-4acc-8dfa-358e0a5d58fc_2000x.jpg?v=1687467250",
+        "name": "Leather Jacket",
+        "provider_rating": "5",
+        "available_no_contact": false
+    }
+]

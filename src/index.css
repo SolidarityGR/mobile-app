@@ -2,8 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat-logo {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+/* To revisit colorscheme use url */
+/* https://www.realtimecolors.com/?colors=e0deee-0c0c17-a2a0cf-6e3a71-ad5e94&fonts=Inter-Inter */
+@layer base {
+  :root {
+    --text: #141122;
+    --background: #e8e8f3;
+    --primary: #32305f;
+    --secondary: #c18dc4;
+    --accent: #a35289;
+  }
+  .dark {
+    --text: #e0deee;
+    --background: #0c0c17;
+    --primary: #a2a0cf;
+    --secondary: #6e3a71;
+    --accent: #ad5e94;
+  }
+}
+
+html, body, #root {
   margin: 0;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
