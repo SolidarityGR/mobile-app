@@ -1,50 +1,41 @@
-import {useParams} from "react-router-dom";
-import Button from "../components/Button";
-import StackLayout from "../layouts/StackLayout";
-import {useState} from "react";
-import Webcam from "react-webcam";
+import { useParams } from 'react-router-dom'
+import Button from '../components/Button'
+import StackLayout from '../layouts/StackLayout'
+import { useState } from 'react'
+import Webcam from 'react-webcam'
 
 function ItemSubmission() {
-	let {type} = useParams();
+	let { type } = useParams()
 
-	const [openCamera, setOpenCamera] =
-		useState(false);
+	const [openCamera, setOpenCamera] = useState(false)
 
 	return (
-		<div className="h-full">
+		<div className='h-full'>
 			<StackLayout>
 				<button
-					onClick={() =>
-						setOpenCamera(
-							!openCamera
-						)
-					}
-					className="size-40 w-full text-white bg-black rounded">
+					onClick={() => setOpenCamera(!openCamera)}
+					className='size-40 w-full text-white bg-black rounded'
+				>
 					Take A Photo
 				</button>
 
-				{openCamera && (
-					<Webcam />
-				)}
+				{openCamera && <Webcam />}
 
 				<input
-					className="border border-black placeholder:text-black p-2 w-full"
-					type="text"
-					placeholder="Name"
+					className='border border-black placeholder:text-black p-2 w-full'
+					type='text'
+					placeholder='Name'
 				/>
 			</StackLayout>
 
-			<div className="absolute bottom-0 w-full p-4">
+			<div className='absolute bottom-0 w-full p-4'>
 				<Button>
 					Submit
-					{type === "food" ||
-					type === "clothes"
-						? ` ${type}`
-						: ""}
+					{type === 'food' || type === 'clothes' ? ` ${type}` : ''}
 				</Button>
 			</div>
 		</div>
-	);
+	)
 }
 
-export default ItemSubmission;
+export default ItemSubmission
