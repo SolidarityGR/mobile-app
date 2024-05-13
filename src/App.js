@@ -34,7 +34,7 @@ export default function App() {
 	//320px, 480px, 768px, 1024px, and 1200px
 	return (
 		<BrowserRouter>
-			<div className="w-[320px] md:w-[480px] lg:w-[768px] xl:w-[1024px] 2xl:w-[1200px] mx-auto">
+			<div className="w-[320px] md:w-[480px] lg:w-[768px] xl:w-[1024px] 2xl:w-[1200px] mx-auto h-full">
 				<Routes>
 					{pages.map(page => (
 						<Route
