@@ -7,27 +7,29 @@ function ItemSelection() {
 	const [data] = useState(require(`../mocked_data/${type}.json`))
 
 	return (
-		<div className='flex flex-col gap-5'>
+		<div className="item-selection grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
 			{data.map(({ image, name, provider_rating, available_no_contact }, index) => {
 				return (
 					<div
 						key={`${index}-${name}`}
-						className='bg-red-300 p-2 flex gap-3'
+						className="flex md:flex-col gap-3 cursor-pointer"
 					>
-						<img
-							className='size-12 rounded-full'
-							src={image}
-							alt='asdf'
-						/>
-						<div className='flex flex-col w-full'>
+						<div className="aspect-square max-sm:size-12">
+							<img
+								className="max-sm:rounded-full h-full object-cover"
+								src={image}
+								alt="asdf"
+							/>
+						</div>
+						<div className="flex flex-col w-full">
 							<span>{name}</span>
-							<div className='flex justify-between'>
+							<div className="flex justify-between">
 								{available_no_contact && (
-									<span className='text-gray-600 text-sm align-middle'>
+									<span className="text-gray-600 text-sm align-middle">
 										Available No Contact
 									</span>
 								)}
-								<div className='ml-auto'>
+								<div className="ml-auto">
 									{Array(5)
 										.fill(0)
 										.map((_, index) => (

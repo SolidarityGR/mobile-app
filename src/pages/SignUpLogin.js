@@ -8,8 +8,8 @@ function SignUpLogin() {
 
 	return (
 		<StackLayout>
-			<Button onClick={() => navigate('/category/select')}>I NEED</Button>
-			<Button onClick={() => navigate('/category/submit')}>I HAVE</Button>
+			<Button onClick={() => navigate('/category/select')}>I NEED 👍</Button>
+			<Button onClick={() => navigate('/category/submit')}>I HAVE 👎</Button>
 		</StackLayout>
 	)
 }

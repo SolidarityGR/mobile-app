@@ -8,9 +8,9 @@ function CategorySelection() {
 
 	return (
 		<StackLayout>
-			<Button onClick={() => navigate('./food')}>Food</Button>
-			<Button onClick={() => navigate('./clothes')}>Clothes</Button>
-			<Button onClick={() => navigate('./other')}>Other</Button>
+			<Button onClick={() => navigate('./food')}>Food 🍲</Button>
+			<Button onClick={() => navigate('./clothes')}>Clothes 👕</Button>
+			<Button onClick={() => navigate('./other')}>Other ♻️</Button>
 		</StackLayout>
 	)
 }
