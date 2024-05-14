@@ -3,14 +3,38 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .montserrat-logo {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 500;
   font-style: normal;
 }
 
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px;
+  background: -webkit-linear-gradient(#e0deee, #ad5e94);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(255, 192, 203, 0.63);
+}
 
 /* To revisit colorscheme use url */
 /* https://www.realtimecolors.com/?colors=e0deee-0c0c17-a2a0cf-6e3a71-ad5e94&fonts=Inter-Inter */
@@ -24,7 +48,8 @@
   }
   .dark {
     --text: #e0deee;
-    --background: #0c0c17;
+    --textdark: #0c0c17;
+    --background: #302c3c;
     --primary: #a2a0cf;
     --secondary: #6e3a71;
     --accent: #ad5e94;
@@ -34,9 +59,6 @@
 html, body, #root {
   margin: 0;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
