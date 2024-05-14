@@ -2,7 +2,7 @@ import classNames from "classnames"
 
 function Button({ children, onClick, className }) {
 	const btnClasses = classNames(
-		"w-full capitalize py-5 px-10 bg-orange-500 hover:bg-orange-600 rounded text-white font-semibold shadow-md",
+		"h-1/6 w-1/2 bg-[color:var(--accent)] hover:bg-[color:var(--primary)] rounded text-[color:var(--textdark)] font-semibold shadow-md text-2xl poppins-regular",
 		className
 	)
 
